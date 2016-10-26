@@ -1,7 +1,8 @@
 # Site settings
 title: Natalia Berdys
+hello: hi, i'm natalia!
 email: batalia.nerdys@gmail.com
-url: https://example.github.io
+url: https://batalia.github.io
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 skills: "iOS Game Developer - Designer - Speaker"
 meta_author: Berdys Natalia
@@ -33,7 +34,7 @@ color:
 footer:
 #  copyright: Dr. Henry Jekyll
 #  location: Location
-  social: Follow me
+  social: follow me
 #  credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
