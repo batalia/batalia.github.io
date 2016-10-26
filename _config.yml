@@ -41,14 +41,14 @@ footer:
 social:
   - title: twitter
     url: http://twitter.com/batalia
-  - title: facebook
-    url: http://www.facebook.com/batalia01
+#  - title: facebook
+#    url: http://www.facebook.com/
   - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/batalia
+    url: http://stackoverflow.com/users/1703254/batalia?tab=profile
 #- title: bitbucket
-#    url: http://bitbucket.org/jekyll
+#    url: http://bitbucket.org/
 #  - title: github
-#    url: http://github.com/jekyll
+#    url: http://github.com/
 
 # Postal address (add as many lines as necessary)
 # address:
