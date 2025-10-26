@@ -1,10 +1,10 @@
 # Site settings
 title: Natalia Berdys
-hello: hi, i'm natalia!
-email: batalia.nerdys@gmail.com
+hello: Hi, I'm Natalie!
+email: hello@batalia.me
 url: https://batalia.github.io
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-skills: "iOS Game Developer - Designer - Speaker"
+skills: "iOS App / Game Developer - Designer - Speaker"
 meta_author: Berdys Natalia
 
 # Google webmaster tools
@@ -25,8 +25,8 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
+  primary: 7A6B95 #80B3FF
+  primary-rgb: "122,107,149" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
 
