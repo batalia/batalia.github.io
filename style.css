@@ -11010,8 +11010,10 @@ html {
   opacity: 0;
   background-color: rgba(122, 107, 149, 0.9);
 }
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+  .portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+  }
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
@@ -11043,3 +11045,12 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+@media (max-width: 767px) {
+  body.modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+}
+

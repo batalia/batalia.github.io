@@ -50,5 +50,21 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+    
+    let scrollPosition = 0;
+
+    document.addEventListener('show.bs.modal', function () {
+        if (window.innerWidth <= 767) {
+            scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            document.body.style.top = `-${scrollPosition}px`;
+        }
+    });
+
+    document.addEventListener('hidden.bs.modal', function () {
+        if (window.innerWidth <= 767) {
+            document.body.style.top = '';
+            window.scrollTo(0, scrollPosition);
+        }
+    });
 
 });
