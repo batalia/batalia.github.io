@@ -4,6 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="Natalia Berdys, Natalie Berdys, iOS developer, mobile app developer, game developer, app designer, WWDC speaker, Swift developer, mobile development">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:image" content="{{ site.url }}/img/profile.png">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="255">
+    <meta property="og:image:alt" content="Natalia Berdys - iOS Developer, Game Developer, Designer & Speaker">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:image" content="{{ site.url }}/img/profile.png">
+    <meta name="twitter:site" content="@batalia">
+    <meta name="twitter:creator" content="@batalia">
     {% if site.meta_author %}<meta name="author" content="{{ site.meta_author }}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
@@ -25,4 +42,37 @@
 
     <!-- Bing Verification -->
     {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Natalia Berdys",
+      "alternateName": "Natalie",
+      "url": "https://batalia.github.io",
+      "jobTitle": "iOS App Developer, Game Developer, Automation Specialist",
+      "description": "Natalia Berdys - iOS App Developer, Game Developer, Designer, Speaker. Creator of #1 apps worldwide. Based in Ottawa, Canada.",
+      "knowsAbout": ["iOS Development", "iOS App Development", "Game Development", "Swift", "Objective-C", "Mobile Design", "Public Speaking"],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Jagiellonian University",
+          "department": "Department of English Philology"
+        },
+        {
+          "@type": "EducationalOrganization", 
+          "name": "Jagiellonian University",
+          "department": "Faculty of Mathematics and Computer Science"
+        }
+      ],
+      "award": ["Apps reaching #1 worldwide", "Winner of Big Indie Pitch 2014"],
+      "memberOf": ["WWDC Speaker", "JSConfEU Speaker", "Rails Girls Speaker", "try!swift NYC Speaker"],
+      "sameAs": [
+        "https://twitter.com/batalia",
+        "https://stackoverflow.com/users/1703254/batalia",
+        "https://github.com/batalia"
+      ]
+    }
+    </script>
 </head>
