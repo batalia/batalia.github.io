@@ -1,47 +1,32 @@
     <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.location }}</h3>
-                        <p>
-                            {% for adress in site.address %}
-                                {{ adress.line }} <br>
-		                    {% endfor %}
-                        </p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.social }}</h3>
-                        <ul class="list-inline">
-                            {% for network in site.social %}
-                            <li>
-                                <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
-                            </li>
-		                    {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.credits }}</h3>
-                        <p>{{ site.credits }}</p>
-                    </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">{{ site.footer.location }}</h4>
+                    <p class="lead mb-0">
+                        {% for adress in site.address %}
+                            {{ adress.line }} <br>
+                        {% endfor %}
+                    </p>
                 </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}
-                    </div>
+                <!-- Footer Social Icons -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">{{ site.footer.social }}</h4>
+                    {% for network in site.social %}
+                        <a class="btn btn-outline-light btn-social mx-1" href="{{ network.url }}"><i class="fab fa-fw fa-{{ network.title }}"></i></a>
+                    {% endfor %}
+                </div>
+                <!-- Footer About Text -->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">{{ site.footer.credits }}</h4>
+                    <p class="lead mb-0">{{ site.credits }}</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+    <!-- Copyright Section -->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}</small></div>
     </div>
