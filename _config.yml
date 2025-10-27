@@ -240,7 +240,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-link-attributes
-  - jekyll-twitter-plugin
   - jemoji
 
 # Sass/SCSS Configuration
