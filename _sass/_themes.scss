@@ -2,7 +2,7 @@
  * Themes
  ******************************************************************************/
 
-@use "variables" as *;
+@import "variables";
 
 :root {
   --global-bg-color: #{$beige-light};
