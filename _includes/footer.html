@@ -1,32 +1,25 @@
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Location -->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">{{ site.footer.location }}</h4>
-                    <p class="lead mb-0">
-                        {% for adress in site.address %}
-                            {{ adress.line }} <br>
-                        {% endfor %}
-                    </p>
-                </div>
-                <!-- Footer Social Icons -->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="mb-4">{{ site.footer.social }}</h4>
-                    {% for network in site.social %}
-                        <a class="btn btn-outline-light btn-social mx-1" href="{{ network.url }}"><i class="fab fa-fw fa-{{ network.title }}"></i></a>
-                    {% endfor %}
-                </div>
-                <!-- Footer About Text -->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">{{ site.footer.credits }}</h4>
-                    <p class="lead mb-0">{{ site.credits }}</p>
-                </div>
-            </div>
-        </div>
+    {% if site.footer_fixed %}
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
+        {%- if site.impressum_path -%}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+        {%- endif -%}
+        {%- if site.last_updated -%}
+        Last updated: {{ "now" | date: '%B %d, %Y' }}.
+        {%- endif %}
+      </div>
     </footer>
-    <!-- Copyright Section -->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}</small></div>
-    </div>
+    {%- else -%}
+    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
+        {%- if site.impressum_path -%}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+        {%- endif -%}
+        {%- if site.last_updated -%}
+        Last updated: {{ "now" | date: '%B %d, %Y' }}.
+        {%- endif %}
+      </div>
+    </footer>
+    {%- endif %}
