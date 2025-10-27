@@ -2,14 +2,14 @@
 layout: page
 title: Foodo Kitchen
 description: An interactive cooking game for kids to learn and play. App Store number 1 in 48 countries.
-img: assets/img/www-fk.jpg
+img: assets/img/www-fk.png
 importance: 1
 category: work
 ---
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/www-fk.jpg" title="Foodo Kitchen" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/www-fk.png" title="Foodo Kitchen" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
