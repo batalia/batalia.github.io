@@ -747,6 +747,12 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
+// Exclude footer from theme transitions
+html.transition footer,
+html.transition footer * {
+  transition: none !important;
+}
+
 // Extra Markdown style (post Customization)
 .post {
   .post-meta {
